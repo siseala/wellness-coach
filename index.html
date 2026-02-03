@@ -23,7 +23,7 @@
     .brand-wrap{display:flex;align-items:center;gap:12px}
     .brand{font-weight:800;letter-spacing:.5px}
     .logo{height:44px;width:auto;border-radius:6px}
-    .cta{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#020617;padding:10px 16px;border-radius:10px;font-weight:700}
+    .cta{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#020617;padding:10px 16px;border-radius:10px;font-weight:700;display:inline-block}
     .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:48px 0}
     .hero h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05}
     .hero p{color:var(--muted);font-size:1.05rem}
@@ -39,8 +39,7 @@
     .offer{display:flex;flex-wrap:wrap;gap:12px}
     .pill{border:1px solid #020617;border-radius:999px;padding:8px 12px;color:var(--muted)}
     .footer{border-top:1px solid #020617;color:var(--muted)}
-    form input,form textarea{width:100%;background:#020617;border:1px solid #020617;border-radius:10px;padding:12px;color:var(--text)}
-    form button{border:none}
+    img.responsive{width:100%;border-radius:12px;margin-bottom:10px}
     @media(max-width:900px){.hero{grid-template-columns:1fr}}
   </style>
 </head>
@@ -49,15 +48,15 @@
     <div class="container">
       <nav>
         <div class="brand-wrap">
-          <!-- Upload your logo file to the repo as logo.png and this will display -->
           <img src="logo.png" alt="Well Yess Nutrition Logo" class="logo" />
           <div class="brand">Well Yess Nutrition</div>
         </div>
-        <div style="display:flex;gap:12px;align-items:center">
+        <div style="display:flex;gap:12px;align-items:center;flex-wrap:wrap">
           <a href="#services">Services</a>
           <a href="#products">Products</a>
           <a href="#education">Education</a>
-          <a class="cta" href="#contact">Book a Consult</a>
+          <a class="cta" href="#contact">Order / Consult</a>
+          <a class="cta" href="https://wa.me/18767076164" target="_blank">WhatsApp</a>
         </div>
       </nav>
     </div>
@@ -66,8 +65,8 @@
   <main class="container">
     <section class="hero">
       <div>
-        <span class="badge">Nutrition • Fitness • Natural Results</span>
-        <h1>Well Yess Nutrition & Fitness Products</h1>
+        <span class="badge">Nutrition • Fitness • Recovery</span>
+        <h1>Performance Wellness for Real Life</h1>
         <p>
           We help busy women, families, and entrepreneurs improve energy, reduce pain, and support metabolic health
           using natural nutrition, fitness-focused wellness products, and Ayurvedic-inspired strategies.
@@ -81,18 +80,26 @@
           <span class="pill">Stress & Focus</span>
         </div>
         <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
-          <a class="cta" href="#contact">Free Strategy Call</a>
+          <a class="cta" href="https://forms.gle/SWHuL2sqqU5Dej7G8" target="_blank">Free Consult & Order Form</a>
           <a class="cta" href="https://wa.me/18767076164" target="_blank">Chat on WhatsApp</a>
-          <a href="#education">Watch & Learn</a>
+          <a class="cta" href="https://forms.gle/SWHuL2sqqU5Dej7G8" target="_blank">Free Guide: Reduce Inflammation</a>
         </div>
       </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1554284126-aa88f22d8b74?q=80&w=1200&auto=format&fit=crop" alt="Wellness lifestyle" class="responsive" />
+      </div>
+    </section>
+
+    <section class="section">
       <div class="card">
         <h3>Why People Choose Us</h3>
         <ul class="list">
           <li>Plain-language health & fitness education</li>
           <li>Natural nutrition and recovery solutions</li>
           <li>Entrepreneur-focused wellness for high performers</li>
-          <li>Jamaica-based, globally relevant</li>
+          <li>Trusted by 100+ customers across Jamaica</li>
+          <li>Fast relief reported by joint & muscle pain users</li>
+          <li>Repeat buyers for recovery & skin products</li>
         </ul>
       </div>
     </section>
@@ -102,14 +109,17 @@
       <p class="lead">Practical nutrition, fitness, and wellness support for real life.</p>
       <div class="grid grid-3">
         <div class="card">
+          <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?q=80&w=1200&auto=format&fit=crop" alt="Consulting" class="responsive" />
           <h3>1:1 Nutrition & Wellness Consults</h3>
           <p class="muted">Personalized guidance for pain, fatigue, weight, metabolic and lifestyle goals.</p>
         </div>
         <div class="card">
+          <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop" alt="Group wellness" class="responsive" />
           <h3>Corporate, Church & Group Wellness</h3>
           <p class="muted">Workshops on stress, energy, fitness recovery, and metabolic health.</p>
         </div>
         <div class="card">
+          <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=1200&auto=format&fit=crop" alt="Coaching" class="responsive" />
           <h3>Business + Body Performance Coaching</h3>
           <p class="muted">For entrepreneurs who need their body and mind to match their ambition.</p>
         </div>
@@ -121,16 +131,31 @@
       <p class="lead">Small-batch, natural, and designed for daily performance and recovery.</p>
       <div class="grid grid-3">
         <div class="card">
+          <img src="https://images.unsplash.com/photo-1582719478185-2f7f9c9d6c1a?q=80&w=1200&auto=format&fit=crop" alt="Pain oil" class="responsive" />
           <h3>Ayurvedic Pain & Recovery Oil</h3>
           <p class="muted">For joint, muscle, and nerve discomfort. Ideal for fitness recovery.</p>
+          <a class="cta" href="https://wa.me/18767076164?text=I%20want%20to%20order%20the%20Pain%20%26%20Recovery%20Oil" target="_blank">Order via WhatsApp</a>
         </div>
         <div class="card">
+          <img src="https://images.unsplash.com/photo-1600185365483-26d7c0a7a3a3?q=80&w=1200&auto=format&fit=crop" alt="Body butter" class="responsive" />
           <h3>Oat Milk Body Butter</h3>
           <p class="muted">Deep moisture, skin renewal, and visible tone improvement.</p>
+          <a class="cta" href="https://wa.me/18767076164?text=I%20want%20to%20order%20the%20Oat%20Milk%20Body%20Butter" target="_blank">Order via WhatsApp</a>
         </div>
         <div class="card">
+          <img src="https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?q=80&w=1200&auto=format&fit=crop" alt="Natural deodorant" class="responsive" />
           <h3>Natural Deodorant</h3>
           <p class="muted">Sensitive-skin friendly odor control for active lifestyles.</p>
+          <a class="cta" href="https://wa.me/18767076164?text=I%20want%20to%20order%20the%20Natural%20Deodorant" target="_blank">Order via WhatsApp</a>
+        </div>
+      </div>
+
+      <div class="grid grid-3" style="margin-top:16px">
+        <div class="card">
+          <img src="https://images.unsplash.com/photo-1571019613914-85f342c55f6e?q=80&w=1200&auto=format&fit=crop" alt="Recovery bundle" class="responsive" />
+          <h3>Recovery Bundle</h3>
+          <p class="muted">Pain Oil + Body Butter + Deodorant for full-body recovery & freshness.</p>
+          <a class="cta" href="https://wa.me/18767076164?text=I%20want%20to%20order%20the%20Recovery%20Bundle" target="_blank">Order Recovery Bundle</a>
         </div>
       </div>
     </section>
@@ -146,24 +171,20 @@
     </section>
 
     <section id="contact" class="section">
-      <h2>Book a Consult</h2>
-      <p class="lead">Tell us what you're dealing with. We'll map a simple first step.</p>
+      <h2>Order or Book a Consult</h2>
+      <p class="lead">Complete our quick form and our team will contact you on WhatsApp.</p>
       <div class="grid" style="grid-template-columns:1fr 1fr">
-        <form class="card" action="https://formspree.io/f/your-form-id" method="POST">
-          <input type="text" name="name" placeholder="Your Name" required />
-          <br/><br/>
-          <input type="email" name="email" placeholder="Email Address" required />
-          <br/><br/>
-          <textarea name="message" rows="4" placeholder="What are you struggling with?"></textarea>
-          <br/><br/>
-          <button class="cta" type="submit">Request Consult</button>
-        </form>
+        <div class="card">
+          <h3>Wellness & Order Form</h3>
+          <p class="muted">All requests go directly to our team.</p>
+          <a class="cta" href="https://forms.gle/SWHuL2sqqU5Dej7G8" target="_blank">Open Form</a>
+        </div>
         <div class="card">
           <h3>Direct Contact</h3>
           <ul class="list">
             <li>WhatsApp: <a href="https://wa.me/18767076164" target="_blank">+1 (876) 707-6164</a></li>
             <li>Email: <a href="mailto:wellyessnutrion@gmail.com">wellyessnutrion@gmail.com</a></li>
-            <li>YouTube: Wellness & Fitness Education Channel</li>
+            <li>Serving clients across Jamaica & the Caribbean</li>
           </ul>
         </div>
       </div>
@@ -172,7 +193,7 @@
 
   <footer class="footer">
     <div class="container">
-      <p>© 2026 Well Yess Nutrition. Nutrition, fitness & natural wellness products.</p>
+      <p>© 2026 Well Yess Nutrition. Serving clients across Jamaica & the Caribbean.</p>
     </div>
   </footer>
 </body>

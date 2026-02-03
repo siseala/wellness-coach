@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Well Yess Nutrition & Fitness Products</title>
+  <meta name="description" content="Natural nutrition, fitness wellness products, Ayurvedic-inspired remedies, and practical health education for busy families and entrepreneurs." />
+  <style>
+    :root{
+      --bg:#0f172a;
+      --card:#111827;
+      --accent:#22c55e;
+      --accent2:#38bdf8;
+      --text:#e5e7eb;
+      --muted:#9ca3af;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu; background:linear-gradient(180deg,#020617,#020617 30%,#020617); color:var(--text)}
+    a{color:inherit;text-decoration:none}
+    .container{max-width:1100px;margin:auto;padding:24px}
+    header{position:sticky;top:0;background:rgba(2,6,23,.85);backdrop-filter:blur(8px);border-bottom:1px solid #020617}
+    nav{display:flex;align-items:center;justify-content:space-between;gap:12px}
+    .brand-wrap{display:flex;align-items:center;gap:12px}
+    .brand{font-weight:800;letter-spacing:.5px}
+    .logo{height:44px;width:auto;border-radius:6px}
+    .cta{background:linear-gradient(90deg,var(--accent),var(--accent2));color:#020617;padding:10px 16px;border-radius:10px;font-weight:700}
+    .hero{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center;padding:48px 0}
+    .hero h1{font-size:clamp(2rem,4vw,3.2rem);line-height:1.05}
+    .hero p{color:var(--muted);font-size:1.05rem}
+    .card{background:linear-gradient(180deg,#020617,#020617);border:1px solid #020617;border-radius:18px;padding:20px}
+    .grid{display:grid;gap:16px}
+    .grid-3{grid-template-columns:repeat(3,1fr)}
+    .badge{display:inline-block;background:#020617;border:1px solid #020617;color:var(--accent);padding:6px 10px;border-radius:999px;font-weight:700;font-size:.8rem}
+    .list{padding-left:18px}
+    .list li{margin:8px 0;color:var(--muted)}
+    .section{padding:36px 0}
+    .section h2{font-size:1.8rem;margin-bottom:8px}
+    .section p.lead{color:var(--muted);max-width:760px}
+    .offer{display:flex;flex-wrap:wrap;gap:12px}
+    .pill{border:1px solid #020617;border-radius:999px;padding:8px 12px;color:var(--muted)}
+    .footer{border-top:1px solid #020617;color:var(--muted)}
+    form input,form textarea{width:100%;background:#020617;border:1px solid #020617;border-radius:10px;padding:12px;color:var(--text)}
+    form button{border:none}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="brand-wrap">
+          <!-- Upload your logo file to the repo as logo.png and this will display -->
+          <img src="logo.png" alt="Well Yess Nutrition Logo" class="logo" />
+          <div class="brand">Well Yess Nutrition</div>
+        </div>
+        <div style="display:flex;gap:12px;align-items:center">
+          <a href="#services">Services</a>
+          <a href="#products">Products</a>
+          <a href="#education">Education</a>
+          <a class="cta" href="#contact">Book a Consult</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div>
+        <span class="badge">Nutrition • Fitness • Natural Results</span>
+        <h1>Well Yess Nutrition & Fitness Products</h1>
+        <p>
+          We help busy women, families, and entrepreneurs improve energy, reduce pain, and support metabolic health
+          using natural nutrition, fitness-focused wellness products, and Ayurvedic-inspired strategies.
+        </p>
+        <div class="offer">
+          <span class="pill">Pain & Inflammation</span>
+          <span class="pill">Metabolic Health</span>
+          <span class="pill">Hormonal Balance</span>
+          <span class="pill">Skin & Body Care</span>
+          <span class="pill">Fitness Recovery</span>
+          <span class="pill">Stress & Focus</span>
+        </div>
+        <div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="cta" href="#contact">Free Strategy Call</a>
+          <a class="cta" href="https://wa.me/18767076164" target="_blank">Chat on WhatsApp</a>
+          <a href="#education">Watch & Learn</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Why People Choose Us</h3>
+        <ul class="list">
+          <li>Plain-language health & fitness education</li>
+          <li>Natural nutrition and recovery solutions</li>
+          <li>Entrepreneur-focused wellness for high performers</li>
+          <li>Jamaica-based, globally relevant</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <h2>Services</h2>
+      <p class="lead">Practical nutrition, fitness, and wellness support for real life.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>1:1 Nutrition & Wellness Consults</h3>
+          <p class="muted">Personalized guidance for pain, fatigue, weight, metabolic and lifestyle goals.</p>
+        </div>
+        <div class="card">
+          <h3>Corporate, Church & Group Wellness</h3>
+          <p class="muted">Workshops on stress, energy, fitness recovery, and metabolic health.</p>
+        </div>
+        <div class="card">
+          <h3>Business + Body Performance Coaching</h3>
+          <p class="muted">For entrepreneurs who need their body and mind to match their ambition.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <h2>Nutrition & Fitness Products</h2>
+      <p class="lead">Small-batch, natural, and designed for daily performance and recovery.</p>
+      <div class="grid grid-3">
+        <div class="card">
+          <h3>Ayurvedic Pain & Recovery Oil</h3>
+          <p class="muted">For joint, muscle, and nerve discomfort. Ideal for fitness recovery.</p>
+        </div>
+        <div class="card">
+          <h3>Oat Milk Body Butter</h3>
+          <p class="muted">Deep moisture, skin renewal, and visible tone improvement.</p>
+        </div>
+        <div class="card">
+          <h3>Natural Deodorant</h3>
+          <p class="muted">Sensitive-skin friendly odor control for active lifestyles.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <h2>Health & Fitness Education</h2>
+      <p class="lead">We translate complex health topics into simple, usable daily actions.</p>
+      <div class="grid grid-3">
+        <div class="card"><h3>Metabolic Syndrome</h3><p class="muted">What it really is, and how to reverse early warning signs.</p></div>
+        <div class="card"><h3>Hormones, Stress & Training</h3><p class="muted">Why burnout and poor recovery stall results.</p></div>
+        <div class="card"><h3>Natural Pain & Recovery</h3><p class="muted">Reducing inflammation without living on pills.</p></div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Book a Consult</h2>
+      <p class="lead">Tell us what you're dealing with. We'll map a simple first step.</p>
+      <div class="grid" style="grid-template-columns:1fr 1fr">
+        <form class="card" action="https://formspree.io/f/your-form-id" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required />
+          <br/><br/>
+          <input type="email" name="email" placeholder="Email Address" required />
+          <br/><br/>
+          <textarea name="message" rows="4" placeholder="What are you struggling with?"></textarea>
+          <br/><br/>
+          <button class="cta" type="submit">Request Consult</button>
+        </form>
+        <div class="card">
+          <h3>Direct Contact</h3>
+          <ul class="list">
+            <li>WhatsApp: <a href="https://wa.me/18767076164" target="_blank">+1 (876) 707-6164</a></li>
+            <li>Email: <a href="mailto:wellyessnutrion@gmail.com">wellyessnutrion@gmail.com</a></li>
+            <li>YouTube: Wellness & Fitness Education Channel</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Well Yess Nutrition. Nutrition, fitness & natural wellness products.</p>
+    </div>
+  </footer>
+</body>
+</html>
